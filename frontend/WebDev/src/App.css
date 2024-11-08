@@ -1,0 +1,38 @@
+body {
+  margin: 0; 
+  height: 100vh; 
+  display: flex; 
+  flex-direction: column; 
+}
+
+.background {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100vw; 
+  height: 100vh; 
+  background-image: url('./Photos/background.jpg'); 
+  background-size: cover; 
+  background-position: center; 
+  z-index: 0; 
+}
+
+.overlay {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100vw; 
+  height: 100vh; 
+  background-color: rgba(0, 0, 0, 0.879); 
+  z-index: 1; 
+}
+
+.content {
+  position: relative; 
+  z-index: 2; 
+  flex-grow: 1; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  color: white; 
+}

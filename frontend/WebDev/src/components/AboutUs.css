@@ -1,0 +1,41 @@
+.about-us-container {
+  display: flex;
+  justify-content: flex-end; /* Align to the right on wide screens */
+  padding: 20px;
+  height: 100vh; /* Ensure the container takes the full height of the viewport */
+  align-items: center; /* Center items vertically within the container */
+}
+
+.about-us-box {
+  flex: 1; 
+  max-width: 800px; 
+  background-color: rgba(46, 46, 46, 0.9);
+  border-radius: 30px; 
+  padding: 20px;
+  box-shadow: 0 12px 12px rgba(0, 0, 0, 0.146);
+  margin: 20px; /* Adjust margin for spacing */
+  color: rgb(54, 255, 198);
+}
+
+.about-us-box h2,
+.about-us-box p {
+  color: rgb(255, 255, 255);
+}
+
+.about-us-box h2 {
+  font-size: 2rem;
+  margin: 10px 0;
+  text-align: left;
+  text-shadow: 1px 1px rgb(62, 249, 255);
+}
+
+@media (max-width: 1240px) {
+  .about-us-container {
+    justify-content: center; /* Center the content on narrow screens */
+  }
+  
+  .about-us-box {
+    width: calc(100% - 40px); /* Full width minus the padding */
+    margin: 20px 0; /* Add margin for spacing */
+  }
+}

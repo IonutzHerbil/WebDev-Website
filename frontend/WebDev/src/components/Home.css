@@ -1,0 +1,28 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: calc(100vh - 20px);
+  padding-top: 20px;
+}
+
+.home-title {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.home-description {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .home-title {
+    font-size: 2rem; /* Adjust title size */
+  }
+  .home-description {
+    font-size: 1rem; /* Adjust description size */
+  }
+}
